@@ -87,48 +87,18 @@
                     <a class="side-menu__item" href="index.html"><i class="side-menu__icon ti-home"></i><span class="side-menu__label">Dashboard</span></a>
                 </li>
                 <li><h3>Quản lý</h3></li>
-                <li class="slide">
-                    <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-truck"></i><span class="side-menu__label">Điều phối</span><i class="angle fa fa-angle-right"></i></a>
-                    <ul class="slide-menu">
-                        <li><a href="dieuphoi.html" class="slide-item">Điều phối đơn hàng</a></li>
-                        <li><a href="lichsu.html" class="slide-item">Lịch sử</a></li>
-                    </ul>
-                </li>
                 <li>
                     <a class="side-menu__item" href="donhang.html"><i class="side-menu__icon ti-package"></i><span class="side-menu__label">Đơn hàng</span></a>
                 </li>
                 <li>
-                    <a class="side-menu__item" href="nguoidung.html"><i class="side-menu__icon ti-user"></i><span class="side-menu__label">Người dùng</span></a>
+                    <a class="side-menu__item" href="khachhang.html"><i class="side-menu__icon ti-user"></i><span class="side-menu__label">Khách hàng</span></a>
                 </li>
-                <li><h3>Cửa hàng</h3></li>
-                <li class="slide">
-                    <a class="side-menu__item" data-toggle="slide" href="cuahang.html"><i class="side-menu__icon ti-shopping-cart"></i><span class="side-menu__label">Cửa hàng</span><i class="angle fa fa-angle-right"></i></a>
-                    <ul class="slide-menu">
-                        <li><a href="cuahang.html" class="slide-item">Cửa hàng</a></li>
-                        <li><a href="kho.html" class="slide-item">Kho</a></li>
-                    </ul>
+                <li><h3>Quản lý sản phẩm</h3></li>
+                <li>
+                    <a class="side-menu__item" href="sanpham.html"><i class="side-menu__icon ti-server"></i><span class="side-menu__label">Sản phẩm</span></a>
                 </li>
-                <li class="slide">
-                    <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-server"></i><span class="side-menu__label">Sản phẩm </span><i class="angle fa fa-angle-right"></i></a>
-                    <ul class="slide-menu">
-                        <li><a href="danhmuc.html" class="slide-item">Danh mục</a></li>
-                        <li><a href="sanpham.html" class="slide-item">Sản phẩm</a></li>
-                    </ul>
+                    
                 </li>
-                <li class="slide">
-                    <a class="side-menu__item" href="banhang.html"><i class="side-menu__icon ti-briefcase"></i><span class="side-menu__label">Bán hàng</span></a>
-                </li>
-                <li><h3>Marketing</h3></li>
-                <li class="slide">
-                    <a class="side-menu__item" href="vouchers.html"><i class="side-menu__icon ti-id-badge"></i><span class="side-menu__label">Vouchers</span></a>
-                </li>
-				<li class="slide">
-					<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-server"></i><span class="side-menu__label">Bài viết </span><i class="angle fa fa-angle-right"></i></a>
-					<ul class="slide-menu">
-						<li><a href="danhmucbaiviet.html" class="slide-item">Danh mục</a></li>
-						<li><a href="baiviet.html" class="slide-item">Bài viết</a></li>
-					</ul>
-				</li>
                 <li><h3>Cấu hình</h3></li>
                 <li>
                     <a class="side-menu__item" href="hotro.html"><i class="side-menu__icon ti-receipt"></i><span class="side-menu__label">Hỗ trợ</span></a>
@@ -318,10 +288,10 @@
                 <!-- PAGE-HEADER -->
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">Bài viết</h1>
+                        <h1 class="page-title">Sản phẩm</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Bài viết</li>
+                            <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -479,10 +449,9 @@
                     <div class="col-md-12 col-lg-12">
                         <div class="card">
                             <div class="card-header d-flex justify-content-between">
-                                <h3 class="card-title mr-3">Danh sách bài viết</h3>
+                                <h3 class="card-title mr-3">Danh sách sản phẩm</h3>
                                 <div class="ml-auto pageheader-btn">
-                                    <a href="chitietcombo.html" class="btn btn-success btn-icon text-white mr-2 btn-sm"><span> <i class="fe fe-plus"></i> </span> Thêm combo </a>
-                                    <a href="thembaiviet.html" class="btn btn-success btn-icon text-white mr-2 btn-sm"><span> <i class="fe fe-plus"></i> </span> Thêm tin tức </a>
+                                    <a href="themsanpham.html" class="btn btn-success btn-icon text-white mr-2 btn-sm"><span> <i class="fe fe-plus"></i> </span> Thêm sản phẩm </a>
                                     <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
                                 </div>
                             </div>
@@ -490,73 +459,69 @@
                                 <table class="table card-table table-vcenter text-nowrap">
                                     <thead>
                                     <tr>
-                                        <th>STT</th>
-                                        <th>Tiêu đề</th>
-                                        <th>Loại bài viết</th>
-                                        <th>Ngày viết</th>
+                                        <th>Mã sp</th>
+                                        <th>Tên sp</th>
+                                        <th>Nhà sản xuất</th>
+                                        <th>Đóng gói</th>
+                                        <th>Giá (vnđ)</th>
+                                        <th>Giá chiết khấu</th>
+                                        <th>Số lượng trong kho</th>
                                         <th>Trạng thái</th>
-                                        <th>Gửi thông báo</th>
                                         <th>Tùy chỉnh</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td><i>Tin tức</i></td>
-                                            <td>10/10/2020</td>
+                                            <td>0001</td>
+                                            <td>Thuốc ngủ</td>
+                                            <td style="max-width: 200px; w white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Công ty dược phẩm Nam Hà Lorem ipsum dolor sit amet.</td>
+                                            <td>Lọ</td>
                                             <td>
-                                                <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span> Khả dụng
+                                                100.000
                                             </td>
-                                            <td><span class="text-success">Thành công</span></td>
                                             <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                10.000
+                                            </td>
+                                            <td>200</td>
+                                            <td><i class="fa fa-check mr-1 text-success"></i> Kích hoạt</td>
+                                            <td>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
                                                 <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td><i>Tin tức</i></td>
-                                            <td>10/10/2020</td>
+                                            <td>0001</td>
+                                            <td>Thuốc ngủ</td>
+                                            <td style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Công ty dược phẩm Nam Hà Lorem ipsum dolor sit amet.</td>
+                                            <td>Lọ</td>
                                             <td>
-                                                <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span> Khả dụng
+                                                100.000
                                             </td>
-                                            <td><span class="text-success">Thành công</span></td>
                                             <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                10.000
+                                            </td>
+                                            <td>200</td>
+                                            <td><i class="fa fa-check mr-1 text-success"></i> Kích hoạt</td>
+                                            <td>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
                                                 <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
+                                            <td>0001</td>
+                                            <td>Thuốc ngủ</td>
+                                            <td style="max-width: 200px;      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Công ty dược phẩm Nam Hà Lorem ipsum dolor sit amet.</td>
+                                            <td>Hộp</td>
                                             <td>
-                                                <a href="chitietcombo.html"><i>Combo</i></a>
+                                                100.000
                                             </td>
-                                            <td>10/10/2020</td>
                                             <td>
-                                                <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span> Khả dụng
+                                                10.000
                                             </td>
-                                            <td></td>
+                                            <td>200</td>
+                                            <td><i class="fa fa-check mr-1 text-success"></i> Kích hoạt</td>
                                             <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td>
-                                                <a href="chitietcombo.html"><i>Combo</i></a>
-                                            </td>
-                                            <td>10/10/2020</td>
-                                            <td>
-                                                <span class="w-4 h-4 bg-warning rounded-circle mr-1 d-inline-block"></span> Lưu trữ
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
                                                 <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
                                             </td>
                                         </tr>

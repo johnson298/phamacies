@@ -48,6 +48,8 @@
 
     <!--BOOTSTRAP-DATERANGEPICKER CSS-->
     <link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- FILE UPLODE CSS -->
+    <link href="assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css"/>
 
     <!-- TIME PICKER CSS -->
     <link href="assets/plugins/time-picker/jquery.timepicker.css" rel="stylesheet"/>
@@ -129,7 +131,7 @@
                         <div class="dropdown profile-1">
                             <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none d-flex">
 										<span>
-											<img src="assets/images/users/10.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
+											<img src="assets/images/users/user.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
 										</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -288,10 +290,11 @@
                 <!-- PAGE-HEADER -->
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">Khách hàng</h1>
+                        <h1 class="page-title">Sản phẩm</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Khách hàng</li>
+                            <li class="breadcrumb-item "><a href="">Sản phẩm</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Thêm sản phẩm</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -402,7 +405,7 @@
                         <div class="dropdown profile-1">
                             <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none d-flex">
 										<span>
-											<img src="assets/images/users/10.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
+											<img src="assets/images/users/user.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
 										</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -445,88 +448,73 @@
                 <!-- PAGE-HEADER END -->
 
                 <!-- CONTENT -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-10 col-md-12 col-sm-12">
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between">
-                                <h3 class="card-title mr-3">Danh sách khách hàng</h3>
-                                
-                                <div class="ml-auto pageheader-btn">
-                                    <a href="#" class="btn btn-success btn-icon text-white mr-2 btn-sm" data-toggle="modal"  data-target="#themkhachhang"><span> <i class="fe fe-plus"></i> </span> Tạo mới khách hàng </a>
-                                    <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
+                            <div class="card-header">
+                                <h3 class="card-title">Thông tin sản phẩm</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="form-group">
+                                            <label for="exampleInputname">Tên sản phẩm</label>
+                                            <input type="text" class="form-control" id="exampleInputname" placeholder="Nhập tên sản phẩm">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Quy cách đóng gói</label>
+                                            <input type="number" class="form-control" id="" placeholder="VD: họp, lọ, gói, chai,...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Nhà sản xuất</label>
+                                            <input type="text" class="form-control" id="exampleInputname1" placeholder="Nhập tên nhà sản xuất">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Giá tiền(vnđ)</label>
+                                            <input type="number" value="0" class="form-control" id="exampleInputname1" placeholder="Nhập giá tiền">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Chiết khấu</label>
+                                            <div class="w-100 d-flex">
+                                                <label class="custom-control custom-radio mr-2">
+                                                    <input type="radio" class="custom-control-input" name="example-radios" value="option2" checked>
+                                                    <span class="custom-control-label">Giá tiền (vnđ)</span>
+                                                </label>
+                                                <label class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" name="example-radios" value="option2">
+                                                    <span class="custom-control-label">Phẩn trăm (%)</span>
+                                                </label>
+                                            </div>
+                                            <input type="number" value="0" class="form-control" id="exampleInputname1" placeholder="Nhập chiết khấu">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Giá tiền(vnđ)</label>
+                                            <input type="number" value="0" class="form-control" id="exampleInputname1" placeholder="Nhập giá tiền">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Số lượng</label>
+                                            <input type="number" value="0" class="form-control" placeholder="Nhập số lượng">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <label>Ảnh sản phẩm</label>
+                                            <input type="file" class="dropify" data-height="300" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Mô tả sản phẩm</label>
+                                            <textarea class="content form-control" name="example" rows="5"></textarea>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table card-table table-vcenter text-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Khách hàng</th>
-                                            <th>Địa chỉ</th>
-                                            <th>SĐT</th>
-                                            <th>Loại KH</th>
-                                            <th>Tùy chỉnh</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                <span class="tag">
-                                                    <span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg"></span>
-                                                    Nguyễn Văn A
-                                                </span>
-                                            </td>
-                                            <td>99 Láng Hạ, Ba Đình, Hà Nội</td>
-                                            <td>09845892</td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span>
-                                                    <span>KH thân thiết</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" data-toggle="tooltip" title="Xem & sửa" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
-                                                <a href="#" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                <span class="tag">
-                                                    <span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg"></span>
-                                                    Nguyễn Văn A
-                                                </span>
-                                            </td>
-                                            <td>99 Láng Hạ, Ba Đình, Hà Nội</td>
-                                            <td>09845892</td>
-                                            <td></td>
-                                            <td>
-                                                <a href="#" data-toggle="tooltip" title="Xem & sửa" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
-                                                <a href="#" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                <span class="tag">
-                                                    <span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg"></span>
-                                                    Nguyễn Văn A
-                                                </span>
-                                            </td>
-                                            <td>99 Láng Hạ, Ba Đình, Hà Nội</td>
-                                            <td>09845892</td>
-                                            <td></td>
-                                            <td>
-                                                <a href="#" data-toggle="tooltip" title="Xem & sửa" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
-                                                <a href="#" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
+                            <div class="card-footer text-right">
+                                <a href="#" class="btn btn-success mt-1">Thêm mới</a>
+                                <a href="#" class="btn btn-danger mt-1">Hủy</a>
                             </div>
-                            <!-- table-responsive -->
                         </div>
                     </div>
                 </div>
@@ -535,53 +523,6 @@
             </div>
         </div>
         <!-- CONTAINER CLOSED -->
-        <div class="modal fade" id="themkhachhang" tabindex="-1" role="dialog"  aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="example-Modal3">Thêm mới khách hàng</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="form-control-label mr-3">Tên:</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên khách hàng">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipient-name" class="form-control-label">Số điện thoại:</label>
-                                <input type="phone" class="form-control" id="recipient-name" placeholder="Nhập số điện thoại">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipient-name" class="form-control-label">Địa chỉ:</label>
-                                <input type="phone" class="form-control" id="recipient-name" placeholder="Nhập địa chỉ">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipient-name" class="form-control-label">Ảnh:</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" name="example-file-input-custom">
-                                    <label class="custom-file-label">Choose file</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="custom-switch">
-                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                                    <span class="custom-switch-description mr-2">Khách hàng thân thiết</span>
-                                    <span class="custom-switch-indicator"></span>
-                                </label>
-                            </div>
-                            
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Thêm mới</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- SIDE-BAR -->
     <div class="sidebar sidebar-right sidebar-animate">
@@ -812,6 +753,10 @@
 <script src="assets/plugins/date-picker/jquery-ui.js"></script>
 <script src="assets/plugins/input-mask/jquery.maskedinput.js"></script>
 
+<!-- FILE UPLOADES JS -->
+<script src="assets/plugins/fileuploads/js/fileupload.js"></script>
+<script src="assets/plugins/fileuploads/js/file-upload.js"></script>
+
 <!-- MULTI SELECT JS-->
 <script src="assets/plugins/multipleselect/multiple-select.js"></script>
 <script src="assets/plugins/multipleselect/multi-select.js"></script>
@@ -821,6 +766,9 @@
 
 <!-- CUSTOM JS -->
 <script src="assets/js/custom.js"></script>
+
+<!-- CUSTOM SCROLL BAR JS-->
+<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
 </body>
